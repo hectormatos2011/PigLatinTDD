@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ADAC5571B3B5E64001F3C3A /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC5561B3B5E64001F3C3A /* TemperatureConverter.swift */; };
+		4ADAC5591B3B5E75001F3C3A /* TemperatureConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC5581B3B5E75001F3C3A /* TemperatureConverterTests.swift */; };
+		4ADAC55A1B3B5E7E001F3C3A /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAC5561B3B5E64001F3C3A /* TemperatureConverter.swift */; };
 		51351F4E1B3B39E700E39737 /* PigLatinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */; };
 		51351F4F1B3B39E700E39737 /* PigLatinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */; };
 		6A8674F77AE32D519D6DC864 /* Pods_PigLatinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D59964A9A21C4257A8A88B /* Pods_PigLatinTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -29,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4ADAC5561B3B5E64001F3C3A /* TemperatureConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureConverter.swift; sourceTree = "<group>"; };
+		4ADAC5581B3B5E75001F3C3A /* TemperatureConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureConverterTests.swift; sourceTree = "<group>"; };
 		4F2CB09D866C57C98D1C3B1F /* Pods-PigLatinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PigLatinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PigLatinTests/Pods-PigLatinTests.release.xcconfig"; sourceTree = "<group>"; };
 		51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PigLatinConverter.swift; sourceTree = "<group>"; };
 		94D59964A9A21C4257A8A88B /* Pods_PigLatinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PigLatinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +113,7 @@
 				C48CC8A11B3B35CB00D140F4 /* ViewController.swift */,
 				C48CC8A31B3B35CB00D140F4 /* Main.storyboard */,
 				51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */,
+				4ADAC5561B3B5E64001F3C3A /* TemperatureConverter.swift */,
 				C48CC8A61B3B35CB00D140F4 /* Images.xcassets */,
 				C48CC8A81B3B35CB00D140F4 /* LaunchScreen.xib */,
 				C48CC89D1B3B35CB00D140F4 /* Supporting Files */,
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C48CC8B51B3B35CB00D140F4 /* PigLatinTests.swift */,
+				4ADAC5581B3B5E75001F3C3A /* TemperatureConverterTests.swift */,
 				C48CC8B31B3B35CB00D140F4 /* Supporting Files */,
 			);
 			path = PigLatinTests;
@@ -187,6 +194,7 @@
 		C48CC8921B3B35CB00D140F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Monsoon;
 				TargetAttributes = {
@@ -294,6 +302,7 @@
 				51351F4E1B3B39E700E39737 /* PigLatinConverter.swift in Sources */,
 				C48CC8A21B3B35CB00D140F4 /* ViewController.swift in Sources */,
 				C48CC8A01B3B35CB00D140F4 /* AppDelegate.swift in Sources */,
+				4ADAC5571B3B5E64001F3C3A /* TemperatureConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +312,8 @@
 			files = (
 				51351F4F1B3B39E700E39737 /* PigLatinConverter.swift in Sources */,
 				C48CC8B61B3B35CB00D140F4 /* PigLatinTests.swift in Sources */,
+				4ADAC5591B3B5E75001F3C3A /* TemperatureConverterTests.swift in Sources */,
+				4ADAC55A1B3B5E7E001F3C3A /* TemperatureConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
