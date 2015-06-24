@@ -14,10 +14,10 @@ class PigLatinConverter {
     func convert(stringToConvert: String) -> String {
         var stringToConvert = stringToConvert
         if isFirstCharacterAVowel(stringToConvert) {
-            stringToConvert = moveFirstLetterToEnd(stringToConvert)
-          return addAYToEnd(stringToConvert)
+          return addYAYToEnd(stringToConvert)
         } else {
-            return addYAYToEnd(stringToConvert)
+            stringToConvert = moveFirstLetterToEnd(stringToConvert)
+            return addAYToEnd(stringToConvert)
         }
     }
     
