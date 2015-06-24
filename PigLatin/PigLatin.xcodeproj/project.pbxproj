@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51351F4E1B3B39E700E39737 /* PigLatinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */; };
+		51351F4F1B3B39E700E39737 /* PigLatinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */; };
+		6A8674F77AE32D519D6DC864 /* Pods_PigLatinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D59964A9A21C4257A8A88B /* Pods_PigLatinTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C48CC8A01B3B35CB00D140F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CC89F1B3B35CB00D140F4 /* AppDelegate.swift */; };
 		C48CC8A21B3B35CB00D140F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CC8A11B3B35CB00D140F4 /* ViewController.swift */; };
 		C48CC8A51B3B35CB00D140F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48CC8A31B3B35CB00D140F4 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F2CB09D866C57C98D1C3B1F /* Pods-PigLatinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PigLatinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PigLatinTests/Pods-PigLatinTests.release.xcconfig"; sourceTree = "<group>"; };
+		51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PigLatinConverter.swift; sourceTree = "<group>"; };
+		94D59964A9A21C4257A8A88B /* Pods_PigLatinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PigLatinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48CC89A1B3B35CB00D140F4 /* PigLatin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PigLatin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48CC89E1B3B35CB00D140F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48CC89F1B3B35CB00D140F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,7 @@
 		C48CC8AF1B3B35CB00D140F4 /* PigLatinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PigLatinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48CC8B41B3B35CB00D140F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C48CC8B51B3B35CB00D140F4 /* PigLatinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigLatinTests.swift; sourceTree = "<group>"; };
+		E18BB5D8F41ACEA71BDF7FA3 /* Pods-PigLatinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PigLatinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PigLatinTests/Pods-PigLatinTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8674F77AE32D519D6DC864 /* Pods_PigLatinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043A5D94CB77446CA6EE2CB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E18BB5D8F41ACEA71BDF7FA3 /* Pods-PigLatinTests.debug.xcconfig */,
+				4F2CB09D866C57C98D1C3B1F /* Pods-PigLatinTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22720D3E72E9ED0ADA33BCB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D59964A9A21C4257A8A88B /* Pods_PigLatinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C48CC8911B3B35CB00D140F4 = {
 			isa = PBXGroup;
 			children = (
 				C48CC89C1B3B35CB00D140F4 /* PigLatin */,
 				C48CC8B21B3B35CB00D140F4 /* PigLatinTests */,
 				C48CC89B1B3B35CB00D140F4 /* Products */,
+				043A5D94CB77446CA6EE2CB2 /* Pods */,
+				22720D3E72E9ED0ADA33BCB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +107,7 @@
 				C48CC89F1B3B35CB00D140F4 /* AppDelegate.swift */,
 				C48CC8A11B3B35CB00D140F4 /* ViewController.swift */,
 				C48CC8A31B3B35CB00D140F4 /* Main.storyboard */,
+				51351F4D1B3B39E700E39737 /* PigLatinConverter.swift */,
 				C48CC8A61B3B35CB00D140F4 /* Images.xcassets */,
 				C48CC8A81B3B35CB00D140F4 /* LaunchScreen.xib */,
 				C48CC89D1B3B35CB00D140F4 /* Supporting Files */,
@@ -136,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C48CC8BC1B3B35CB00D140F4 /* Build configuration list for PBXNativeTarget "PigLatinTests" */;
 			buildPhases = (
+				B9DBD042F0DFA8E5CF19C1EB /* Check Pods Manifest.lock */,
 				C48CC8AB1B3B35CB00D140F4 /* Sources */,
 				C48CC8AC1B3B35CB00D140F4 /* Frameworks */,
 				C48CC8AD1B3B35CB00D140F4 /* Resources */,
+				B2739B28E9A718584E481D27 /* Embed Pods Frameworks */,
+				6CEF715EFC1EEE9249CB5724 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,11 +238,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CEF715EFC1EEE9249CB5724 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PigLatinTests/Pods-PigLatinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2739B28E9A718584E481D27 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PigLatinTests/Pods-PigLatinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9DBD042F0DFA8E5CF19C1EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C48CC8961B3B35CB00D140F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51351F4E1B3B39E700E39737 /* PigLatinConverter.swift in Sources */,
 				C48CC8A21B3B35CB00D140F4 /* ViewController.swift in Sources */,
 				C48CC8A01B3B35CB00D140F4 /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51351F4F1B3B39E700E39737 /* PigLatinConverter.swift in Sources */,
 				C48CC8B61B3B35CB00D140F4 /* PigLatinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +441,7 @@
 		};
 		C48CC8BD1B3B35CB00D140F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18BB5D8F41ACEA71BDF7FA3 /* Pods-PigLatinTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -379,6 +461,7 @@
 		};
 		C48CC8BE1B3B35CB00D140F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2CB09D866C57C98D1C3B1F /* Pods-PigLatinTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -411,6 +494,7 @@
 				C48CC8BB1B3B35CB00D140F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C48CC8BC1B3B35CB00D140F4 /* Build configuration list for PBXNativeTarget "PigLatinTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +503,7 @@
 				C48CC8BE1B3B35CB00D140F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

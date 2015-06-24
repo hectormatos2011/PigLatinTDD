@@ -8,29 +8,50 @@
 
 import UIKit
 import XCTest
+import Nimble
 
-class PigLatinTests: XCTestCase {
+class PigLatinConverterTests: XCTestCase {
+    let converter = PigLatinConverter()
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    // MARK: Does it work
+    func testThatItConvertsPigToIgPay() {
+        expect(self.converter.convert("pig")).to(equal("igpay"))
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testThatItConvertsBananaToAnanabay() {
+        expect(self.converter.convert("banana")).to(equal("ananabay"))
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    //MARK: Test First Character
+    func testThatFirstCharacterIsAConsonant() {
+        expect(self.converter.isFirstCharacterAVowel("pig")).to(beFalse())
+    }
+
+    func testThatFirstCharacterIsAVowel() {
+        expect(self.converter.isFirstCharacterAVowel("error")).to(beTrue())
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testThatFirstCharacterInAnEmptyStringIsNotAVowel() {
+        expect(self.converter.isFirstCharacterAVowel("")).to(beFalse())
     }
+
+    func testThatFirstCharacterInAnNumberStringIsNotAVowel() {
+        expect(self.converter.isFirstCharacterAVowel("3peat")).to(beFalse())
+    }
+    
+    func test_moveFirstLetterOfConsonantsToEnd(){
+    
+        expect(self.converter.moveFirstLetterToEnd("word")).to(equal("ordw"))
+    
+    }
+    
+    func test_willFailWithOnlyOneLetter(){
+    
+        expect(self.converter.moveFirstLetterToEnd("w")).to(equal("w"))
+    }
+    
+    
+    
     
 }
