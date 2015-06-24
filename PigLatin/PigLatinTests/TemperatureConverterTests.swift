@@ -15,30 +15,26 @@ class TemperatureConverterTests: XCTestCase {
     let converter = TemperatureConverter()
 
     func testConvertCtoF() {
-        expect(self.converter.convertCtoF(10.0)).to(equal(50.0))
+        expect(self.converter.convertCtoF(10.0)).to(beCloseTo(50.0, within: 0.1))
     }
     
     func testConvertFtoC() {
-        expect(self.converter.convertFtoC(10.0)).to(equal(-12.2222223))
+        expect(self.converter.convertFtoC(10.0)).to(beCloseTo(-12.2, within: 0.1))
     }
     
     func testConvertKtoC() {
-      expect(self.converter.convertKtoC(10.0)).to(equal(-263.15))
+      expect(self.converter.convertKtoC(10.0)).to(beCloseTo(-263.15, within: 0.1))
     }
     
     func testConvertCtoK() {
-      expect(self.converter.convertCtoK(10.0)).to(equal(283.15))
+      expect(self.converter.convertCtoK(10.0)).to(beCloseTo(283.15, within: 0.1))
     }
     
     func testConvertFtoK() {
-        expect(self.converter.convertFtoK(10)).to(equal(260.927795))
+        expect(self.converter.convertFtoK(10)).to(beCloseTo(260.9, within: 0.1))
     }
     
     func testConvertKtoF() {
-        expect(self.converter.convertKtoF(10)).to(equal(-441.670013))
+        expect(self.converter.convertKtoF(10)).to(beCloseTo(-441.6, within: 0.1))
     }
-    
-    
-    
-
 }
