@@ -23,7 +23,9 @@ class PigLatinConverterTests: XCTestCase {
         expect(self.converter.convert("banana")).to(equal("ananabay"))
     }
     
-    //MARK: Test First Character
+    //MARK: Consonant or Vowel Tests
+    
+    //MARK: -Test First Character
     func testThatFirstCharacterIsAConsonant() {
         expect(self.converter.isFirstCharacterAVowel("pig")).to(beFalse())
     }
@@ -40,6 +42,8 @@ class PigLatinConverterTests: XCTestCase {
         expect(self.converter.isFirstCharacterAVowel("3peat")).to(beFalse())
     }
     
+    //MARK: Rearrange Word Tests
+    
     func test_moveFirstLetterOfConsonantsToEnd(){
     
         expect(self.converter.moveFirstLetterToEnd("word")).to(equal("ordw"))
@@ -51,6 +55,13 @@ class PigLatinConverterTests: XCTestCase {
         expect(self.converter.moveFirstLetterToEnd("w")).to(equal("w"))
     }
     
+    func test_applyAYForConsanants() {
+        expect(self.converter.addAYToEnd("pig")) == "pigay"
+    }
+    
+    func test_applyYAYForConsanants() {
+        expect(self.converter.addAYToEnd("error")) == "erroray"
+    }
     
     
     
